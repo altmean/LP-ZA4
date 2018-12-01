@@ -1,0 +1,87 @@
+
+
+/*****************************************/
+
+/* styles for tabs*/
+.tabs {
+	margin: 1.5rem 0;
+}
+
+/* Thumbs */
+.tabs-thumbs {
+	margin: 0;
+	padding-left: 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.tabs-thumb {
+	display: inline-block;
+	line-height: 3;
+	position: relative;
+}
+	.tabs-thumb a {
+		display: block;
+		padding: 0 1.5rem;
+		color: #9d9d9d;
+		text-decoration: none;
+		cursor: pointer;
+}
+		.tabs-thumb a:hover {
+			color: #fe5b2d;
+		}
+
+/* Содержимое панелей */
+
+.tabs_leibel{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 70px;
+  padding-bottom: 80px; 
+}
+.tabs_item_list{
+  width: 24.5%;
+  min-height: 620px;
+  display: flex;
+  flex-direction: column;
+ background-color: white;
+
+}
+
+
+
+/* Panels */
+.tabs-panels {
+margin: 0;
+	padding: ;
+	list-style: none;
+	 display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.tabs-panel {
+	display: none;
+}
+
+/* Active */
+.tabs-thumb.is-active a {
+	color: #fe5b2d;
+}
+.tabs-thumb.is-active a:hover {
+		cursor: default;
+		color: #fe5b2d;
+	}
+
+	.tabs-thumb.is-active a::after {
+		content: '';
+		position: absolute;
+		bottom: -1px;
+		left: 0;
+		height: 2px;
+		width: 100%;
+		background: #fe5b2d;
+	}
+}
+
+/* General page styling */

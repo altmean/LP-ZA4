@@ -1,0 +1,21 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="302" width="302" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_4" y2="184.4375" x2="565.5" y1="185.4375" x1="565.5" fill-opacity="null" stroke-opacity="null" stroke-width="4.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="300.4375" x2="300.5" y1="-1.5625" x1="0.5" fill-opacity="null" stroke-width="4.5" stroke="#ffffff" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="1.4375" x2="301.5" y1="301.4375" x1="0.5" fill-opacity="null" stroke-width="4.5" stroke="#ffffff" fill="none"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="35" id="svg_8" y="144.4375" x="27" fill-opacity="null" stroke-width="0" stroke="#ffffff" fill="#000000"/>
+  <text stroke="#ffffff" transform="matrix(1.28125,0,0,1,-9.140625,0) " xml:space="preserve" text-anchor="start" font-family="Georgia, Times, 'Times New Roman', serif" font-size="63" id="svg_13" y="167.4375" x="30.939024" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#ffffff">a</text>
+  <text stroke="#ffffff" transform="matrix(1.5,0,0,1,-62.25,0) " xml:space="preserve" text-anchor="start" font-family="Georgia, Times, 'Times New Roman', serif" font-size="63" id="svg_14" y="78.4375" x="129.833333" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#ffffff">r</text>
+  <text stroke="#ffffff" transform="matrix(1.6818181276321411,0,0,1,-140.113625228405,0) " xml:space="preserve" text-anchor="start" font-family="Georgia, Times, 'Times New Roman', serif" font-size="63" id="svg_15" y="165.4375" x="216.797298" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#ffffff">t</text>
+  <text stroke="#ffffff" transform="matrix(1.0562143325805664,0,0,1,-6.886255741119385,0) " xml:space="preserve" text-anchor="start" font-family="Georgia, Times, 'Times New Roman', serif" font-size="63" id="svg_16" y="255.4375" x="133.86133" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#ffffff">4</text>
+ </g>
+</svg>

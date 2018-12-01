@@ -1,0 +1,1302 @@
+
+
+/* MAIN STYLES FOR SITE.
+
+* 1 Regular styles [ Change FONTS!!!]
+* 2 Header
+* 3 About Us
+*/
+
+
+
+
+/******************************
+  1. Regular Rules
+*******************************/
+body{
+	margin: 0;
+	padding: 0;
+	background-size: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+/****************************
+  2. HEADER
+*****************************/
+.main-header{
+  max-height: 60px;
+  width: 90%;
+  position: fixed;
+  z-index: 999;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 15px;
+  /* for changes, when scroll */
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+  background-color:transparent;   
+}
+
+/* --------------------
+ Logo in the header
+-----------------------*/
+.logo_container_in_header{
+  display: inline-block;
+  width: 7%;
+}
+.logo_in_header{
+  color: white;
+}
+
+/* --------------------
+ Nav MENU
+-----------------------*/
+.menu {
+  display: inline-block;
+  word-spacing: 15px;
+  width: 78%;
+  text-align: right;
+  margin-right: 2%;
+  }
+.menu a{
+  text-decoration: none;
+}
+.topnav a:hover{
+  color: #e0487b;
+}
+/* hover menu words, when scroll */
+a.active{
+ color: #e0487b;
+}
+/* adaptive rules */
+.menu__icon {
+   display: none;
+   width: 45px;
+   height: 35px;
+   position: relative;
+   top: 1px;
+   right: 15px;
+   cursor: pointer;
+}
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ecebeb;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+.menu__icon span:nth-child(2), 
+.menu__icon span:nth-child(3) {
+  top: 13px;
+}
+.menu__icon span:nth-child(4) {
+  top: 26px;
+ }
+.menu__links-item {
+    display: inline-block;
+    color: #f1ececfa;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+    text-transform: uppercase;
+}
+.menu.menu_state_open 
+.menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.menu.menu_state_open 
+.menu__icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.menu.menu_state_open  
+.menu__icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.menu.menu_state_open  
+.menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.menu.menu_state_open 
+.menu__links {
+  display: block;  
+}
+    
+/*---------------------------------------------
+ Social icons after menu (in the right corner)
+----------------------------------------------*/
+/* Social icons container in header*/
+.social_header_container{
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+  border-left: 1px solid #bfbdbd78;
+  padding-left: 2%;
+}
+/* Styles for icons container in header*/
+.social_icons_in_header{
+  color: white;
+  font-size: 18px;
+}
+
+/*----------------------------------------
+  active styles for header, when scroll 
+------------------------------------------*/
+/* main-header */
+.active_header_scroll{ 
+  background-color: #fff
+}
+/* logo_in_header */
+.active_headerlogo_scroll{
+  color: black;
+}
+/* menu__links-item */
+.active_menu_scroll{
+  color: black;
+}
+/* .menu_mob_span  */
+.active_mob_menu_scroll{
+  background-color: black;
+}
+/* social_header_container */
+.active_border{
+  border-left: 1px solid #bfbdbdd6;
+}
+/* social_icons_in_header */
+.active_social_icons{
+  color: black;
+}
+
+
+
+
+/****************************
+  2. HEAD PREVIEW
+*****************************/
+.headimage{
+  width: 100%;
+  min-height: 660px;
+  background: linear-gradient(rgba(0,0,0,0.55),
+  rgba(0,0,0,0.55)),
+  url('../img/prev2.jpg');
+  background-size: cover;
+}
+.headimage h1{
+  font-size: 55px;
+  margin: 10px 0px 10px 0px; 
+  text-align: center;
+  color: white;
+}
+
+.headimage h2{
+  text-align: center;
+  color: white;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 0;
+}
+.central_hr{
+  width: 105px;
+  height: 5px;
+  background-color: #de4377;
+  border: 0;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+/*------------------ 
+  Main logotype
+--------------------*/
+.logotype_container{
+  width: 100%;
+  text-align: center;
+}
+.logo_header{
+  width: 120px;
+  height: 120px;
+  margin-top: 180px;
+  border: 3px solid white;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50%;
+}
+
+/****************************
+  3. About Us
+*****************************/
+.about_us{
+  width: 100%;
+}
+.about_us_container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+.about_us_img{
+  width: 25%;
+}
+.about_us_text {
+  width: 40%;
+  padding-right: 2%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0 0 0 0;
+}
+.about_us_text h2{
+  font-size: 35px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 200;
+}
+.about_us_text h3{
+  font-size: 35px;
+  margin: 0px;
+  padding: 0px;
+}
+.left_hr{
+  width: 105px;
+  height: 5px;
+  background-color: #f70e5c;
+  border: 0;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 0px;
+}
+.about_us_text p{
+  line-height: 25px;
+}
+/* Container for social icons */
+.social_icons_main{
+  margin-top: 20px;
+  text-align: left;
+}
+/* Styles for icons  */
+.social_icons{
+  font-size: 20px;
+  color: gray;
+}
+
+/****************************
+  4. Our Services
+*****************************/
+.service_block {
+	display: block;
+	width: 100%;
+  background-color: #f9f9f9;
+  padding: 80px 0 80px 0;
+}
+
+.description_of_services h4{
+  font-size: 22px;
+  margin: 0;
+}
+
+.services_container{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.description_of_services{
+  width: 50%;
+  /*margin-left: 2%;*/
+  /*padding: 80px 0 80px 0;*/
+  padding-top: 50px;
+}
+
+.description_of_services p{
+  line-height: 25px;
+}
+.one_description{
+  box-shadow: 0 0 7px rgba(0,0,0,0.8);
+  padding: 15px;
+  margin: 15px;
+}
+
+/****************************
+  5. OUR TEAM
+*****************************/
+.our_team{
+  width: 100%;
+  height: auto;
+  padding: 80px 0px 80px 0px;
+}
+.headline_central{
+  font-size: 35px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  margin: 0;
+}
+.description_part_central{
+  text-align: center;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*--------------------------
+  Items with photos of team
+----------------------------*/
+.advantages_container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 400px;  
+}
+.advantages{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+.advantages_item{
+  width: 23.5%;
+}
+.advantages_item h4{
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+}
+.description_team_person{
+  margin: 0;
+  font-size: 15px;
+  font-weight: 100;
+}
+/* Gray Scale */
+.advantages_item img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.advantages_item:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+
+/****************************
+  6. Main Demo Video
+*****************************/
+.main_video_demo{
+  width: 100%;
+  min-height: 400px;
+  background: linear-gradient(rgba(0,0,0,0.65),
+  rgba(0,0,0,0.65)),
+  url('../img/concert_vd.jpg');
+  background-size: cover;
+}
+.main_video_demo h2 {
+  font-size: 34px;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.main_video_demo p{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+/* Icon Play Demo */
+.play_icon{
+  text-align: center;
+  margin: 115px 0px 10px 0px;
+}
+.play_demo_icon{
+  font-size: 70px;
+  color: white;
+}
+.play_demo_icon:hover{
+  color: #f70e5c;
+}
+
+
+ 
+
+
+
+/****************************
+  7. Portfolio
+*****************************/
+/* See in ../Portfolio */
+
+
+/*-------------------------
+hover for portfolio photo 
+---------------------------*/
+
+
+
+/****************************
+  8. Programm
+*****************************/
+.programm_block{
+  width: 100%;
+  min-height: 400px;
+  background: linear-gradient(rgba(0,0,0,0.35),
+  rgba(0,0,0,0.35)),
+  url('../img/bck_programm.jpg');
+  background-size: cover;
+}
+
+.programm_block p{
+  text-align: center;
+  color: white;
+  font-size: 42px;
+  margin: 0;
+}
+
+/* button_Show_Program */
+.open_program {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.open_program{
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #11b3b3; /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  width: 14%;
+  border-radius: 1px;
+  margin-right: 43%;
+  margin-left: 43%;
+  margin-top: 150px;
+  margin-bottom: 35px;
+}
+.open_program:hover { background: #11c1c1; } /* при наведении курсора мышки */
+.open_program:active { background: #0e6b6b; } /* при нажатии */
+
+/*----------------------------
+  Hidden Program Block TABS
+-----------------------------*/
+.program_tabs{
+  display: none;
+}
+
+.tabs{
+  width: 100%;
+  min-height: 400px;
+}
+.tabs{
+    display:inline-block;
+}
+.tabs > div{
+    padding-top:10px;
+}
+.tabs .tabs_container_checks{
+    margin:0px;
+    padding:0px;
+    text-align: center;
+}
+
+.tabs .tabs_container_checks
+ .tabs_cheks_bottom{
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    display: inline-block;
+    text-align: center;
+    padding:10px 15px;
+    /*background:#e9eaeb;*/
+    color:#707070;
+    font-size: 22px;
+    font-weight: 600;
+}
+.tabs .tabs_container_checks .tabs_cheks_bottom.active, 
+.tabs .tabs_container_checks .tabs_cheks_bottom.active:hover{
+    /*background:#46c765;*/
+    color:#f70e5c;
+}
+.tabs .tabs_container_checks .tabs_cheks_bottom:hover{
+    /*background:#d6d6d7;*/
+    color:#f70e5c;
+}
+
+
+/*----------------------------
+ Content in TABS
+-----------------------------*/
+.content_in_tabs{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.content_program_container{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-bottom: 0px; 
+}
+.program_content_items{
+  width: 32%;
+  min-height: 200px;
+  /*border-bottom: 10px solid #cc3668c7;*/
+  display: flex;
+  flex-direction: column;
+ background-color: white;
+ /*border: 2px solid red;*/
+
+}
+
+
+
+
+
+/* ------------------------
+  button Close Program Tabs
+--------------------------*/
+.hide_program_tabs {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.hide_program_tabs{
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: red; /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  width: 14%;
+  border-radius: 1px;
+  margin-right: 43%;
+  margin-left: 43%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.hide_program_tabs:hover { background: #11c1c1; } /* при наведении курсора мышки */
+.hide_program_tabs:active { background: #0e6b6b; } /* при нажатии */
+
+
+
+
+
+/****************************
+  9. Prices
+*****************************/
+.prices_block{
+  width: 100%;
+  min-height: 420px;
+  text-align: center;
+  padding-top: 80px;
+}
+.description_block{
+    text-align: center;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.prices_container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.pricelabel{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 70px;
+  padding-bottom: 80px; 
+}
+.prices_item{
+  width: 23%;
+  min-height: 620px;
+  border-bottom: 10px solid #cc3668c7;
+  display: flex;
+  flex-direction: column;
+ /* border-top: 1px solid gray;*/
+  /*border-right: 12px solid #ded7dac2;
+  border-left: 12px solid #ded7dac2;*/
+  /*background-image: url("../img/note.png");*/
+ /* background-size: cover;*/
+ background-color: white;
+ box-shadow: 0 0 7px rgba(0,0,0,0.5);
+
+}
+
+/*----------------------- 
+  Price label
+------------------------*/
+/* prices circle */
+#tbl1-color {
+  background-color: #cc3668c7;
+  height: 190px;
+}
+.tbl-flex-cen {
+  align-items: center;
+  -webkit-align-items: center;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.price-circle {
+  border: solid 5px #ffffff;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+
+.sy-flex-col {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+
+
+.sy-price-h3 {
+  color: #ffffff;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;  
+}
+
+.sy-price-ann {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0;
+}
+/* end prices circle */
+
+
+
+.prices_item ul{
+  font-size: 16px;
+  width: 80%;
+  text-align: center;
+  font-weight: 500;
+}
+.prices_item li{
+  margin: 15px 0 15px 0;
+}
+
+/* button in the end */
+
+#link-price1 {
+  background-color: #cc3668c7;
+  border-radius: ;
+  color: #fffffa;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: .5rem 1rem;
+  text-decoration: none;
+}
+
+.tbl-flex-cen_fix {
+  margin-bottom: 10px;
+  margin-top: auto;
+  align-self: end;
+  margin-right: auto;
+  margin-left: auto;
+}
+/****************************
+  10. Contacts
+*****************************/
+.contacts{
+	width: 100%;
+	min-height: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color:#f9f9f9;
+}
+
+/* Background */
+.contacts{
+ /* background: url('../img/ctn.jpg');
+  background-size: cover; */
+}
+
+.info_contacts{
+  text-align: left;
+  width: 35%;
+  font-size: 17px;
+  display: inline;
+  color: white;
+}
+.contacts h4{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+.contacts_information{
+  margin-top: 0px;
+}
+.contactinfocont{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+.contactinfo{
+	margin-left: 150px;
+	width: 20%;
+	max-height: 380px;
+	display: inline-block;
+}
+/* ------------ */
+.item_contact_icons{
+  display: flex; 
+  flex-wrap: wrap; 
+  margin-bottom: 36px;
+}
+
+/* Call Back me button */
+.callback_me_href_container{
+  margin-bottom: 10px;
+  margin-top: 20px;
+    align-self: end;
+}
+.callback_me {
+  background-color: #cc3668c7;
+  border-radius: ;
+  color: #fffffa;
+  font-size: 20px;
+  padding: .5rem 1rem;
+  text-decoration: none;
+}
+/****************************
+  11. Message contact form
+*****************************/
+.contactform{
+	margin-right: 150px;
+	width: 60%;
+	max-height: 380px;
+}
+form{
+	padding-left: 35px;
+	padding-right: 35px;
+}
+form p{
+	margin-top: 0px;
+}
+.inname{
+	font: 13.5px 'IBM Plex Sans';
+	width: 96%;
+	height: 45px;
+	margin: 0px 0px 15px 0px;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #d76289;
+      background-color: white;
+}
+#email{
+	font: 13.5px 'IBM Plex Sans';
+	width: 96%;
+	height: 45px;
+	margin: 0px 15px 15px 0px;
+	padding-left: 2%;
+	padding-right: 2%;
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #d76289;
+}
+textarea{
+	font: 13.5px 'IBM Plex Sans';
+	width: 96%;
+	height: 90px;
+	margin: 0px 0px 20px 0px;
+	padding-left: 2%;
+	padding-right: 2%;
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #d76289;
+}	
+
+/*--------------------------
+  11.1 BUTTON SEND MESSAGE 
+---------------------------*/
+.buttonsend {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.buttonsend{
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #d76289; /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  width: 40%;
+  border-radius: 4px;
+}
+.buttonsend:hover { background: #11c1c1; } /* при наведении курсора мышки */
+.buttonsend:active { background: #0e6b6b; } /* при нажатии */
+
+/*--------------------------------
+  11.2 Loader after send message
+----------------------------------*/
+.loader_sendmessahe{
+  margin-right: auto;
+  margin-left: 45%;
+}
+
+
+
+
+/****************************
+  12. Footer
+*****************************/
+footer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+  max-height: 280px;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	background-color: #111010;
+	padding: 0px 0;
+  /*border-bottom: 3px solid #35d1d1;*/
+}
+
+/*-------------------------------
+  12.1 Logotype in the footer 
+---------------------------------*/
+.logotype_container_footer{
+  width: 100%;
+  justify-content: center;
+}
+.logo_footer{
+  width: 60px;
+  height: 60px;
+  margin-top: 40px;
+  border: 3px solid white;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50%;
+}
+
+/*-------------------------------
+  12.2 Copyright
+---------------------------------*/
+footer .copyright{
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 5px;
+  color: #fff;
+}
+.copyright{ 
+  text-decoration: none;
+  color: #fff;
+}
+
+/*-------------------------------
+  12.3 Made By
+---------------------------------*/
+.madeby{
+  text-decoration: none;
+  color: #8c8888;
+  font-size: 12px;
+  margin: 0 0 20px 0;
+}
+.madeby a{
+  text-decoration: none;
+  color: #8c8888;
+}
+.madeby a:hover { color:#f3eeee; } /* при наведении курсора мышки */
+.madeby a:active { color:#f3eeee; } /* при нажатии */
+
+
+/*--------------------------------------
+  12.4 Social icons in footer
+---------------------------------------*/
+/* Container */
+.social_header_container_footer{
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px 20px 20px;
+  letter-spacing: 15px;
+}
+/* Icons */
+.social_icons_footer{
+  color: gray;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+/********************************
+  13. OTHER ELEMENTS
+**********************************/
+/*---------------------- 
+ 13.1 UPbutton 
+-----------------------*/
+#upbutton {
+    background: url("../media/up.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    z-index: 999;
+  }
+
+/*------------------------------------- 
+ 13.1 Modal Window for Message CF (11)
+--------------------------------------*/
+/* basick styles for modal window */
+.overlay_moadal_msg {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10; 
+    display: none;
+/* background dark */
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    cursor: default; 
+}
+/* activate background dark */
+.overlay_moadal_msg:target {
+    display: block;
+}
+/* Styles for modal window */
+.popup {
+    top: -100%;
+    right: 0;
+    left: 50%;
+    font-size: 14px;
+    z-index: 20;
+    margin: 0;
+    width: 36%;
+    height: auto;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 100px;
+/* stability windows when scroll */
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    background: #fefefe;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    font: 14px/18px inherit;
+/* shadow out */
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+    -webkit-transition: -webkit-transform 0.6s ease-out;
+    -moz-transition: -moz-transform 0.6s ease-out;
+    -o-transition: -o-transform 0.6s ease-out;
+    transition: transform 0.6s ease-out;
+}
+/* activate modal block */
+.overlay_moadal_msg:target+.popup {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+}
+/* close button */
+.close{
+    text-decoration: none;
+}
+.close {
+    position: absolute;
+    top: 1px;
+    right: 8px;
+    font-size: 22px;
+    color: rgba(51, 51, 51, 0.4);
+    transition: color 200ms, transform 500ms;
+ }
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+}
+.close:hover {
+    color: #333;   
+}
+.popup img {
+    width: 100%;
+    height: auto;
+    margin-left: 41%;
+}
+.pic-left, 
+.pic-right {
+    width: 25%;
+    height: auto;
+}
+.pic-left {
+    float: left;
+    margin: 5px 15px 5px 0;
+}
+.pic-right {
+    float: right;
+    margin: 5px 0 5px 15px;
+}
+.popup embed, 
+.popup iframe {
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0; 
+    display:block;
+    margin: auto;
+    min-width: 320px;
+    max-width: 600px;
+    width: 100%;
+}
+.popup h2 {
+    margin: 0;
+    color: #242724;
+    padding: 5px 0px 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 28px;
+    font-family: inherit;
+    line-height: 1.3;
+}
+.popup p {
+  margin: 0; 
+  padding: 5px 0 5px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
+/****************************** 
+  Styles callBack form MODAL WINDOW
+*********************************/
+/*------------------------------------- 
+ 13.1 Modal Window for Message CF (11)
+--------------------------------------*/
+/* basick styles for modal window */
+.overlay_moadal_msg_cb {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10; 
+    display: none;
+/* background dark */
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    cursor: default; 
+}
+/* activate background dark */
+.overlay_moadal_msg_cb:target {
+    display: block;
+}
+/* Styles for modal window */
+.popup_cb {
+    top: -100%;
+    right: 0;
+    left: 50%;
+    font-size: 14px;
+    z-index: 20;
+    margin: 0;
+    width: 29%;
+    height: auto;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 100px;
+/* stability windows when scroll */
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    background: #fefefe;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    font: 14px/18px inherit;
+/* shadow out */
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+    -webkit-transition: -webkit-transform 0.6s ease-out;
+    -moz-transition: -moz-transform 0.6s ease-out;
+    -o-transition: -o-transform 0.6s ease-out;
+    transition: transform 0.6s ease-out;
+}
+/* activate modal block */
+.overlay_moadal_msg_cb:target+.popup_cb {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+}
+/* close button */
+.close_cb{
+    text-decoration: none;
+}
+.close_cb {
+    position: absolute;
+    top: 1px;
+    right: 8px;
+    font-size: 22px;
+    color: rgba(51, 51, 51, 0.4);
+    transition: color 200ms, transform 500ms;
+ }
+.close_cb:before {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+}
+.close_cb:hover {
+    color: #333;   
+}
+.popup_cb img {
+    width: 100%;
+    height: auto;
+    margin-left: 41%;
+}
+.pic-left_cb, 
+.pic-right_cb {
+    width: 25%;
+    height: auto;
+}
+.pic-left {
+    float: left;
+    margin: 5px 15px 5px 0;
+}
+.pic-right_cb {
+    float: right;
+    margin: 5px 0 5px 15px;
+}
+.popup_cb embed, 
+.popup_cb iframe {
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0; 
+    display:block;
+    margin: auto;
+    min-width: 320px;
+    max-width: 600px;
+    width: 100%;
+}
+.popup_cb h2 {
+    margin: 0;
+    color: #242724;
+    padding: 5px 0px 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 28px;
+    font-family: inherit;
+    line-height: 1.3;
+}
+.popup_cb p {
+  margin: 0; 
+  padding: 5px 0 5px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/* CALL BACK styles */
+.form-field{
+  width: 90%;
+  height: 30px;
+  margin-bottom: 25px; 
+  padding: 0 8px 0 8px;
+}
+
+
+.content_modal_cb{
+
+}
+
+/* button send */
+.form-button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.form-button{
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #11b3b3; /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  width: 40%;
+  border-radius: 1px;
+}
+.form-button:hover { background: #11c1c1; } /* при наведении курсора мышки */
+.form-button:active { background: #0e6b6b; } /* при нажатии */
+
+
+/********************************
+  END
+**********************************/

@@ -1,0 +1,148 @@
+
+.portfolio-nav ul {
+  margin:0px;
+  padding:60px 0 50px 0;
+  list-style:none;
+  text-align: center;
+  word-spacing: 20px;
+  font-size: 18px;
+}
+.portfolio-item img {
+  max-width:100%;
+  height:auto;
+}
+
+
+/****************************
+  7. Portfolio
+*****************************/
+
+.portfolio-area {
+  padding: 80px 0px;
+  width: 100%;
+}
+.portfolio-nav li {
+    /*margin-right: 20px;*/
+    text-transform: uppercase;
+    cursor:pointer;
+    /*letter-spacing: 1px;*/
+    display: inline-block;
+    font-weight: 800;
+}
+.all-portfolios {
+}
+.active-portfolio {
+    color: #f70e5c;
+}
+
+.single-portfolio {
+    margin-top: 1px;
+}
+
+.portfolio-content {
+    position:  relative;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.portfolio-detail {
+    position:  absolute;
+    bottom: 75px;
+    left: 15px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+/* NEW HOVER */
+/******************************* 
+Hover for IMAGES
+********************************/
+
+.overlay_images {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99.2%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: #08080863;
+}
+.container_img:hover .overlay_images {
+  opacity: 1;
+}
+/* Styles and align for icon */
+
+.icon_view_img{
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: yellow;
+
+}
+/* Hover effect for icon */
+.icon_view_img:hover{
+    color: #eee;
+    transition: .5s ease;
+}
+
+/******************************* 
+Hover for VIDEO
+********************************/
+
+.overlay_video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99.0%;
+  width: 100%;
+  opacity: 1;
+  transition: .4s ease;
+  background-color: #08080863;
+}
+
+/* Styles and align for icon */
+.icon_view_video{
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: yellow;
+}
+/* Hover effect for icon */
+.icon_view_video:hover{
+    color: #eee;
+    transition: .5s ease;
+}
+
+
+
+
+
+/*--------------------------
+ 20. RESPONSIVE CSS 
+ ----------------------------*/
+/* Mobile Phones */
+@media only screen and (min-width: 280px) and (max-width: 767px){
+.portfolio-nav li {
+    float: none;
+    text-align: center;
+    line-height: 30px;
+
+}
+}
