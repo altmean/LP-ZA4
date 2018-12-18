@@ -305,7 +305,7 @@ a.active{
 	display: block;
 	width: 100%;
   background-color: #f9f9f9;
-  padding: 80px 0 80px 0;
+/*  padding: 80px 0 80px 0;*/
 }
 
 .description_of_services h4{
@@ -340,7 +340,51 @@ a.active{
 
     justify-content: flex-start;
 }
+ /* OUR SERVICES 2 */
+.service_block {
+  display: block;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.service_block h3{
+  font-size: 35px;
+  margin:0; 
+  padding: 0px;
+}
+.description_of_services h4{
+  font-size: 22px;
+  margin: 0;
+}
+.hr_service{
+  width: 105px;
+  height: 5px;
+  background-color: #f70e5c;
+  border: 0;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 0px;
+}
 
+.services_container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.services_img{
+  width: 40%;
+  vertical-align: center;
+}
+.description_of_services{
+  width: 48%;
+  margin-left: 2%;
+  padding: 80px 0 80px 0;
+}
+
+.description_of_services p{
+  line-height: 25px;
+}
 
 
 /****************************
