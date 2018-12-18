@@ -334,8 +334,14 @@ a.active{
 .one_description{
   box-shadow: 0 0 7px rgba(0,0,0,0.8);
   padding: 15px;
-  margin: 15px;
+  margin: 15px; 
+  display: flex;
+  flex-direction: row;
+
+    justify-content: flex-start;
 }
+
+
 
 /****************************
   5. OUR TEAM
@@ -752,7 +758,12 @@ hover for portfolio photo
   width: 35%;
   font-size: 17px;
   display: inline;
-  color: white;
+}
+.info_contacts a{
+  color: black;
+}
+.info_contacts a:hover{
+  color: red;
 }
 .contacts h4{
 	width: 100%;
@@ -760,7 +771,6 @@ hover for portfolio photo
 	padding: 0px;
   font-size: 20px;
   font-weight: 800;
-  color: white;
 }
 
 .contacts_information{
@@ -792,7 +802,7 @@ hover for portfolio photo
 }
 .callback_me {
   background-color: #cc3668c7;
-  border-radius: ;
+  border-radius: 4px ;
   color: #fffffa;
   font-size: 20px;
   padding: .5rem 1rem;
@@ -833,7 +843,7 @@ form p{
 	margin: 0px 15px 15px 0px;
 	padding-left: 2%;
 	padding-right: 2%;
-  background-color: #f5f5f5;
+  background-color: white;
   border: none;
   outline: none;
   border-bottom: 2px solid #d76289;
@@ -845,7 +855,7 @@ textarea{
 	margin: 0px 0px 20px 0px;
 	padding-left: 2%;
 	padding-right: 2%;
-  background-color: #f5f5f5;
+  background-color: white;
   border: none;
   outline: none;
   border-bottom: 2px solid #d76289;
